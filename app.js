@@ -13,7 +13,7 @@ const carroPromise = new Promise(() => {
   getCarroLocal();
 }).then(calcularTotal());
 
-fetch("https://dummyjson.com/quotes/1")
+fetch("https://dummyjson.com/quotes/random")
   .then((res) => res.json())
   .then((data) => {
     console.log(data.quote);
