@@ -9,60 +9,68 @@
   <title>Carrito Jose Recart</title>
   <script src="https://kit.fontawesome.com/84c72f2a9c.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<div class="bg-blue-100">
-  <div class="fixed flex flex-row w-full bg-blue-500 text-2xl font-bold justify-around py-4 items-center">
-    <p>SIMULADOR DE COMPRA DEL SUPER - JOSE RECART</p>
+  <div class="bg-blue-100">
+    <div
+      class="fixed flex flex-row w-full bg-gradient-to-r from-blue-700 to-blue-400 text-xl font-bold justify-around py-4 items-center mb-20 top-0">
+      <p>SIMULADOR DE COMPRA DEL SUPER - JOSE RECART</p>
+      <div class="quote"></div>
 
-    <!-- ESTEEE -->
-    <div class="object-contain flex flex-row">
-      <img class="h-14 carro-toggle" src="./img/icon-cart-white.svg" class="object-contain h-8" alt="cart icon">
 
-      <div class="item-number flex h-9 text-md ml-2 p-3 bg-yellow-200 rounded-full items-center">
-        <div class="item-counter text-md">
-          0
+      <div class="object-contain flex flex-row">
+        <img class="h-14 carro-toggle" src="./img/icon-cart-white.svg" class="object-contain h-8" alt="cart icon">
+
+        <div class="item-number flex h-9 text-md ml-2 p-3 bg-yellow-200 rounded-full items-center">
+          <div class="item-counter text-md">
+            0
+          </div>
         </div>
       </div>
     </div>
-  </div>
     <!-- Contenedor de containers-ROW -->
-    <div class="container flex flex-row justify-center mx-auto">
+    <div class="container flex flex-row justify-center mx-auto mt-20">
       <!-- DIV GRILLA ITEMS -->
       <div class="products container flex flex-row flex-wrap justify-center items-center w-2/3 gap-2">
       </div>
-    
-    
 
 
 
-    <!-- CARRO DE COMPRAS -->
-    <div class="divcarro fixed bg-blue-600 bg-opacity-90 flex flex-col w-1/3  transition duration-150 ease-in-out  right-0 top-[88px]">
-      <!-- DIV CONTENEDOR DE LA BOLSA -->
 
-      <div class="flex flex-row justify-center py-6">
-        <div class="">
-          <img src="./icons/bag.png" class="object-contain h-8" alt="">
+
+      <!-- CARRO DE COMPRAS -->
+      <div
+        class="divcarro fixed bg-blue-600 bg-opacity-90 flex flex-col w-1/3  transition duration-150 ease-in-out  right-0 top-[88px] rounded-b-xl hidden">
+        <!-- DIV CONTENEDOR DE LA BOLSA -->
+
+        <div class="flex flex-row justify-center py-6">
+          <div class="">
+            <img src="./icons/bag.png" class="object-contain h-8" alt="">
+          </div>
+          <div class="font-bold mr-3">Carro</div>
         </div>
-        <div class="font-bold mr-3">Carro</div>
-      </div>
 
-      <div class="ml-3 carro flex flex-row flex-wrap text-md font-bold">
+        <div class="ml-3 carro flex flex-row flex-wrap text-md font-bold">
           <!-- AQUI SE INSERTA EL INNER-->
           <div class="basis-1/3">Item</div>
           <div class="basis-1/3">Precio</div>
           <div class="basis-1/3">Unidades</div>
           <div class="p-4 w-full text-right text-2xl font-bold">Total: $0</div>
-      </div>
-      
-      
-      <div class="flex w-full justify-end p-2">
-        <button class="py-2 px-4 bg-white rounded-xl hover:bg-gray-200 font-bold" onclick="vaciarCarro()">
-          Vaciar carro
-        </button>
-      </div>
+        </div>
+
+
+        <div class="flex w-full justify-end p-2">
+          <button class="py-2 px-4 bg-white rounded-xl hover:bg-gray-200 font-bold" onclick="vaciarCarro()">
+            Vaciar carro
+          </button>
+          <button class="py-2 px-4 ml-4 bg-white rounded-xl hover:bg-gray-200 font-bold" onclick="alertPago()">
+            Pagar
+          </button>
+
+        </div>
       </div>
     </div>
-    </div>
+  </div>
   </div>
 
 
@@ -72,6 +80,6 @@
   <script src="./products.js"></script>
   <script src="./app.js"></script>
 
-  </body>
+</body>
 
 </html>
